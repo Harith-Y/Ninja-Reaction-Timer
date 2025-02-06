@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="results-container">
         <h1>Results</h1>
-        <p>Reaction Time: {{ score }} ms</p>
+        <p class="score">Reaction Time: {{ score }} ms</p>
         <p class="rank">Rank: {{ rank }}</p>
         </div>
 </template>
@@ -37,4 +37,22 @@ export default {
         color: #0faf87;
         font-weight: bold;
     }
+    .results-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #577d53;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+    }
+
+    .score {
+        font-size: 2em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div class="block" v-if="showBlock" @click="stopTimer">
-    Click me
+    <div class="block-title">Click Block</div>
+    <div class="block-content">Click Me</div>
   </div>
 </template>
 
@@ -47,5 +48,20 @@ export default {
         text-align: center;
         margin: 40px auto;
         transition: background-color 0.5s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+    .block:hover {
+        background-color: #0a8f6a;
+    }
+
+    .block-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .block-content {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
 </style>
